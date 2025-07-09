@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mood Based Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎵 Mood-Based Music Player</h1>
+    <select id="moodSelector">
+      <option value="happy">😊 Happy</option>
+      <option value="sad">😢 Sad</option>
+      <option value="relax">😌 Relax</option>
+      <option value="energetic">⚡ Energetic</option>
+    </select>
+    <button onclick="playMoodMusic()">Play Music</button>
+
+    <div id="playerSection" style="display:none;">
+      <p id="nowPlaying"></p>
+      <audio id="audioPlayer" controls></audio>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
